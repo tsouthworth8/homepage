@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  webserver:
+    image: nginx
+    container_name: "nginx-quick"
+    ports: 
+      - "80:80"
+    volumes:
+      - ./build:/usr/share/nginx/html
