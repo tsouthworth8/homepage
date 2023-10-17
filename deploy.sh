@@ -3,6 +3,9 @@
 echo "Switching to branch master"
 git checkout master
 
+echo "Pulling branch updates"
+git pull origin master
+
 echo "Building app"
 npm run build
 
