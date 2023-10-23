@@ -33,3 +33,6 @@ web_modules/
 
 # VS Code workspace file
 *.code-workspace
+
+#MISC
+.DS_Store

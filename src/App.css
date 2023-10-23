@@ -1,35 +1,33 @@
+:root {
+  --my-grey: #3f3a41;
+  --off-white: #e7e5d2;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+  background-color: var(--my-grey);
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background: --my-grey;;
+  font-family: -apple-system, BlinkMacSystemFont, 'Times', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(114deg) brightness(109%) contrast(97%);
-  pointer-events: none;
-  margin-top: 5vh;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 12s linear;
-  }
-}
-
-.App-header {
-  background-color: #717e5b;
-  min-height: 100vh;
+  background-color: var(--my-grey);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-flow: column;
+  width: 98vw;
+  height: 96vh;
 }

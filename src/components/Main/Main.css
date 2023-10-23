@@ -1,0 +1,17 @@
+.Main {
+    margin: 5px;
+    flex: 1 1 auto;
+    overflow-y: scroll;
+    padding: 5px;
+    color: var(--off-white);
+    border: 2px solid var(--off-white);
+    /* animation: funky 10s infinite; */
+    background-color: rgb(231, 229, 210, 0.15)
+}
+
+@keyframes funky {
+    from {border: 5px solid #83426d;}
+    33% {border: 5px solid #ee7511;}
+    66% {border: 5px solid #e9cc4f;}
+    to {border: 5px solid #83426d;}
+}
