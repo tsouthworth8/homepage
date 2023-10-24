@@ -1,18 +1,27 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
-import DesktopBreakpoint from "./components/responsive_utilities/desktop_breakpoint";
-import PhoneBreakpoint from "./components/responsive_utilities/phone_breakpoint";
 // import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faOtter } from '@fortawesome/free-solid-svg-icons'
+import useBreakpointValues from "./components/responsive/useBreakpointValues";
 
 library.add(faOtter)
 
 function App() {
+  const currentSize = useBreakpointValues({
+    xs: 'phone',
+    sm: 'phone',
+    md: 'tablet',
+    lg: 'desktop'
+  })
+
   return (
     <div className="App">
-      <DesktopBreakpoint >
+      <Header />
+      <Main size={currentSize} />
+
+      {/* <DesktopBreakpoint >
         <Header />
         <Main />
       </DesktopBreakpoint>
@@ -20,7 +29,7 @@ function App() {
       <PhoneBreakpoint className="phone">
         <Header />
         <Main />
-      </PhoneBreakpoint>
+      </PhoneBreakpoint> */}
       
     </div>
   );

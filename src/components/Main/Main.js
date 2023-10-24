@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import "./Main.css";
 
-function Main() {
+function Main(size) {
+    const currentSize = size.size;
     return (
         <Fragment>
             <div className='Main'>
@@ -10,7 +11,7 @@ function Main() {
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    hi
+                    hi, thanks for using your {currentSize}
                 </div>
             </div>
         </Fragment>
