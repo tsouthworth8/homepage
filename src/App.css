@@ -3,9 +3,9 @@
   --off-white: #e7e5d2;
 }
 
-/* html, body {
+html, body {
   height: 100%;
-} */
+}
 
 html {
   display: table;
@@ -15,7 +15,6 @@ html {
 
 body {
   display: table-cell;
-  vertical-align: middle;
   background: --my-grey;;
   font-family: -apple-system, BlinkMacSystemFont, 'Times', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -29,5 +28,20 @@ body {
   display: flex;
   flex-flow: column;
   width: 98vw;
-  height: 96vh;
+  height: 96vh; /* Desktop browser */
 }
+
+/* iPhone Safari screen (navigation considered) */
+@media screen and (max-width: 768px) {
+  .App {
+    height: 88vh;
+  }
+}
+
+/* iPhone Safari landscape view; tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .App {
+    height: 78vh;
+  }
+}
+
